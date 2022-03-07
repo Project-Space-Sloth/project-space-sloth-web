@@ -1,11 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import {BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./Home/Home";
 import Products from "./Products/Products";
 import Orders from './Orders/Orders';
 import OrderDetail from './Orders/OrderDetail';
+import CheckoutSteps from './Payments/CheckoutSteps';
+import PaymentScreen from './Payments/Payments';
 
 function App() {
   
@@ -32,6 +34,7 @@ function App() {
                         <Link to="/">Home</Link>
                         <Link to="/catalog">Catalog</Link>
                         <Link to="/orders">Orders</Link>
+                        <Link to="/payments">Payments</Link>
                     </div>
                 </header>
                 <aside className="sidebar">
@@ -52,6 +55,8 @@ function App() {
                         <Route path="/catalog" element={<Products />} />
                         <Route path="orders" element={<Orders />}></Route>
                         <Route path="/order/:id" element={<OrderDetail />}></Route>
+                        <Route path="/Payments" element={<PaymentScreen />}></Route>
+                        <Route path="/Checkout" element={<CheckoutSteps />}></Route>
                     </Routes>
                 </main>
                 <footer className="footer">
