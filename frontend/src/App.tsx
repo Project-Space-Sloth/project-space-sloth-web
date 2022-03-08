@@ -8,6 +8,7 @@ import Orders from './Orders/Orders';
 import OrderDetail from './Orders/OrderDetail';
 import CheckoutSteps from './Payments/CheckoutSteps';
 import PaymentScreen from './Payments/Payments';
+import Fulfillment from './Fulfillment/Fulfillment'
 
 function App() {
   
@@ -35,6 +36,7 @@ function App() {
                         <Link to="/catalog">Catalog</Link>
                         <Link to="/orders">Orders</Link>
                         <Link to="/payments">Payments</Link>
+                        <Link to="/fulfillment">Fulfillment</Link>
                     </div>
                 </header>
                 <aside className="sidebar">
@@ -57,6 +59,7 @@ function App() {
                         <Route path="/order/:id" element={<OrderDetail />}></Route>
                         <Route path="/Payments" element={<PaymentScreen />}></Route>
                         <Route path="/Checkout" element={<CheckoutSteps />}></Route>
+                        <Route path="/Fulfillment" element={<Fulfillment />}></Route>
                     </Routes>
                 </main>
                 <footer className="footer">
