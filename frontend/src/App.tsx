@@ -23,7 +23,6 @@ function App() {
         <div className="grid-container">
             <title>Space Sloth</title>
             <link rel="stylesheet" href="style.css"></link>
-            <body>
                 <div>
                 <header className="header">
                     <div className="brand">
@@ -63,7 +62,6 @@ function App() {
                     &copy; 2022 Space Sloth
                 </footer>
                 </div>
-            </body>
         </div>
     </Router>
   );
