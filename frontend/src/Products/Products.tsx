@@ -19,7 +19,7 @@ function Products() {
             = useState(emptyProducts);
 
     useEffect(() => {
-        axios.get<Product[]>("https://localhost:7153/catalog",
+        axios.get<Product[]>("https://project-space-sloth-api.azurewebsites.net/catalog",
         {
             headers: {
                 "Content-Type": "application/json",
